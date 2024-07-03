@@ -9,8 +9,6 @@ import { FaShieldAlt } from "react-icons/fa";
 import { GiRibbonShield } from "react-icons/gi";
 import { GiBorderedShield } from "react-icons/gi";
 
-
-
 export default function Home() {
   return (
     <main>
@@ -71,8 +69,8 @@ export default function Home() {
           <img className="w-2/3 object-contain" src="/assets/cam.png" alt='Image by rawpixel.com on Freepik' />
         </div>
         <div className="flex gap-8 mx-12 justify-around mt-[-10rem]">
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/HAC-HFW2509TU-A-LED.png" alt="HAC-HFW2509TU-A-LED"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/HAC-HFW2509TU-A-LED.png" alt="HAC-HFW2509TU-A-LED"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">HDCVI Camera</h1>
               <h3 className="font-medium text-xl">HAC-HFW2509TU-A-LED</h3>
@@ -80,8 +78,8 @@ export default function Home() {
               <a href="#" className="text-[#FF851B] font-medium text-xl">Acheter Maintenant</a>
             </div>
           </div>
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/XVR5108H-I3.png" alt="XVR5108H-I3"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/XVR5108H-I3.png" alt="XVR5108H-I3"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">HDCVI Recorders</h1>
               <h3 className="font-medium text-xl">XVR5108H-I3</h3>
@@ -89,8 +87,8 @@ export default function Home() {
               <a href="#" className="text-[#FF851B] font-medium text-xl">Acheter Maintenant</a>
             </div>
           </div>
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/CS4220-16GT.png" alt="CS4220-16GT"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/CS4220-16GT.png" alt="CS4220-16GT"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">Desktop Switch</h1>
               <h3 className="font-medium text-xl">CS4220-16GT</h3>
@@ -98,8 +96,8 @@ export default function Home() {
               <a href="#" className="text-[#FF851B] font-medium text-xl">Acheter Maintenant</a>
             </div>
           </div>
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/ARC3800H-W2(868).png" alt="ARC3800H-W2(868)"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/ARC3800H-W2(868).png" alt="ARC3800H-W2(868)"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">Wireless Alarm</h1>
               <h3 className="font-medium text-xl">ARC3800H-W2-868</h3>
@@ -107,8 +105,8 @@ export default function Home() {
               <a href="#" className="text-[#FF851B] font-medium text-xl">Acheter Maintenant</a>
             </div>
           </div>
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/VTS5A40B.png" alt="VTS5A40B"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/VTS5A40B.png" alt="VTS5A40B"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">Video Intercoms</h1>
               <h3 className="font-medium text-xl">VTS5A40B</h3>
@@ -116,8 +114,8 @@ export default function Home() {
               <a href="#" className="text-[#FF851B] font-medium text-xl">Acheter Maintenant</a>
             </div>
           </div>
-          <div className="flex flex-col items-center max-w-sm overflow-hidden shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
-            <img className="w-60 mb-5 object-contain h-28" src="/assets/HY-HT10A-R8.png" alt="HY-HT10A-R8"/>
+          <div className="flex flex-col items-center max-w-sm shadow-lg bg-white h-[18rem] border-t-8 border-[#001F3F]">
+            <img className="z-50 mt-[-1rem] w-60 mb-5 object-contain h-28" src="/assets/HY-HT10A-R8.png" alt="HY-HT10A-R8"/>
             <div className="px-6 py-4 text-center">
               <h1 className="font-bold text-xl text-[#001F3F]">Heat Alarm</h1>
               <h3 className="font-medium text-xl">HY-HT10A-R8</h3>
