@@ -7,5 +7,6 @@ module.exports = model('Camera', {
     illuminationDistance: String,
     lensType: String,
     focalLength: String,
-    price: Number
+    price: Number,
+    image: String
 });
