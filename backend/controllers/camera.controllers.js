@@ -2,25 +2,25 @@ const Camera = require('../models/Camera');
 
 exports.index = async(req, res)=>{
     const cameras = await Camera.find();
-    res.json(cameras);
+    return res.json(cameras);
 };
 
 exports.store = async(req, res)=>{
     const camera = await Camera.create(req.body);
-    res.json(camera);
+    return res.json(camera);
 };
 
 exports.show = async(req, res)=>{
     const camera = await Camera.findById(req.params.id);
-    res.json(camera);
+    return camera ? res.json(camera) : res.status(404).json({ message: "Not found" });
 };
 
 exports.update = async(req, res)=>{
     const camera = await Camera.findByIdAndUpdate(req.params.id, req.body, {new:true});
-    res.json(camera);
+    return camera ? res.json(camera) : res.status(404).json({ message: "Not found" });
 };
 
 exports.delete = async(req, res)=>{
     const camera = await Camera.findByIdAndDelete(req.params.id);
-    res.send('Deleted successfully');
+    return camera ? res.json({ message: "Deleted successfully" }) : res.status(404).json({ message: "Not found" });
 };
