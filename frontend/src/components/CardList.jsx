@@ -1,13 +1,21 @@
-import products from "@/app/products/page";
+"use client"
 import axios from "axios";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-export default async function CardList() {
-  const res = await axios.get("http://localhost:3000/products")
+
+export default function CardList() {
+    const [products, setProducts] = useState([]);
+    useEffect(()=>{
+        axios.get("http://localhost:3000/products")
+        .then((res)=>{setProducts(res.data)})
+        console.log(products)
+    },[])
+  
   return ( 
-            <div className="grid gap-14 md:grid-cols-4 md:gap-4 mx-12">
+            <div className="grid gap-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 min-[1500px]:grid-cols-6 mx-12">
                 {
-                    res.data.map((product)=>{
+                    products.map((product)=>{
                         return (
                             <div className="flex flex-col items-center" key={product._id}>
                                 <div className="w-60 h-40 bg-gray-100">
