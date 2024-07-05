@@ -9,7 +9,6 @@ export default function CardList() {
     useEffect(()=>{
         axios.get("http://localhost:3000/products")
         .then((res)=>{setProducts(res.data)})
-        console.log(products)
     },[])
   
   return ( 
@@ -24,7 +23,7 @@ export default function CardList() {
                                 <div className="px-6 py-4 text-center">
                                     <h1 className="font-bold text-xl text-[#001F3F] pb-4">{product.name}</h1>
                                     <h1 className="text-[#FF851B] text-xl font-bold pb-3">{product.price}</h1>
-                                    <Link href="#" className="text-white font-medium text-xl bg-[#FF851B] p-2 hover:bg-[#001F3F]">Ajouter au panier</Link>
+                                    <Link href="#" className="text-white font-medium text-base bg-[#FF851B] p-2 hover:bg-[#001F3F]">Ajouter au panier</Link>
                                 </div>
                             </div>
                 )})}

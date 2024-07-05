@@ -2,7 +2,7 @@ const {Router} = require('express');
 const router = Router();
 
 const ordersControllers = require('../controllers/order.controllers');
-const objectIdMiddleware = require('../middelware/objectMiddleware');
+const objectIdMiddleware = require('../middelwares/objectMiddleware');
 
 router.get('/orders', ordersControllers.index);
 router.post('/orders', ordersControllers.store);
