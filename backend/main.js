@@ -12,13 +12,14 @@ const errorMiddleware = require('./middelwares/error.middleware');
 const camerasRoutes = require('./routes/camera.routes');
 const ordersRoutes = require('./routes/order.routes');
 
-/* ------ initialization ------*/
+/* ------ initialization ------*/ 
 const app = express();
 dotenv.config();
 
 /* ----- Global Middlewares ----- */
 app.use(express.json());
 app.use(cors());
+app.use('/public', express.static('./public'));
 
 /* ----- Using Routes ----- */
 app.use(camerasRoutes);
@@ -37,7 +38,7 @@ const bootstrap =async()=>{
         app.listen(process.env.APP_PORT, ()=>{console.log(`App started on: http://localhost:${process.env.APP_PORT}`)});
     } 
     catch (err) {
-
+        console.log("Failed to start the server");
     }
 }
 

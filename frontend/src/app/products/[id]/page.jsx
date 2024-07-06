@@ -1,7 +1,5 @@
 "use client"
-import Link from "next/link";
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+
 import { RxDotsHorizontal } from "react-icons/rx";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -16,10 +14,9 @@ export default function product({params}){
 
     return(
         <main>
-            <Navbar></Navbar>
             <section className="flex gap-48 m-16">
                 <div className="h-[20rem] w-[20rem] mt-[-2rem]">
-                    <img src={product.image} alt="" />
+                    <img src={`http://localhost:3000/${product.image}`} alt="" />
                 </div>
                 <div  className="flex flex-col items-start">
                     <h1 className="text-[#FF851B] text-xl font-medium pb-2">| {product.name}</h1>
@@ -34,8 +31,6 @@ export default function product({params}){
                     </ul>
                 </div>
             </section>
-
-            <Footer></Footer>
         </main>
     )
 }

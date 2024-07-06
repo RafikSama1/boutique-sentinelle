@@ -4,6 +4,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
+import { FaCartArrowDown } from "react-icons/fa6";
+
 import Link from "next/link";
 
 export default function Navbar(){
@@ -40,6 +42,8 @@ export default function Navbar(){
                     <div className="text-md font-bold text-white lg:flex-grow">
                         <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">Home</Link>
                         <Link href="/products" className=" block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">Products</Link>
+                        <Link href="/create" className=" block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">Add product</Link>
+                        <Link href="/orders" className=" block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">See orders</Link>
                         <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">Services</Link>
                         <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">About</Link>
                         <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-[#001F3F] mr-2">Contact</Link>
@@ -50,6 +54,8 @@ export default function Navbar(){
                             <IoSearchOutline />
                         </button>
                     </div>
+                    <Link href="/cart" className="text-white text-[1.5rem] block mt-4 lg:inline-block lg:mt-0 px-4 py-2 rounded hover:text-[#001F3F] mr-2"><FaCartArrowDown />
+                    </Link>
                 </div>
             </nav>
         </>

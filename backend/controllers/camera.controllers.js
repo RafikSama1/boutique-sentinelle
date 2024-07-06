@@ -6,7 +6,16 @@ exports.index = async(req, res)=>{
 };
 
 exports.store = async(req, res)=>{
-    const camera = await Camera.create(req.body);
+    const camera = await Camera.create({
+        name: req.body.name,
+        imageSensor: req.body.imageSensor,
+        electronicShutterSpeed: req.body.electronicShutterSpeed,
+        illuminationDistance: req.body.illuminationDistance,
+        lensType: req.body.lensType,
+        focalLength: req.body.focalLength,
+        price: req.body.price,
+        image: req.file.path
+    });
     return res.json(camera);
 };
 

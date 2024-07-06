@@ -8,7 +8,6 @@ import { GiBorderedShield } from "react-icons/gi";
 export default function Home() {
   return (
     <main>
-      <Navbar></Navbar>
       <section>
         <div className="flex justify-between gap-4 items-center">
           <div className="ml-16 w-4/5">
@@ -155,7 +154,6 @@ export default function Home() {
             </div>
           </div>
       </section>
-      <Footer></Footer>
     </main>
   );
 }

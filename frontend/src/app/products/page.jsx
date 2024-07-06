@@ -1,6 +1,4 @@
-import Link from "next/link";
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+
 import CardList from "@/components/CardList";
 import { RxDotsHorizontal } from "react-icons/rx";
 
@@ -8,7 +6,6 @@ import { RxDotsHorizontal } from "react-icons/rx";
 export default function products(){
     return(
         <main>
-            <Navbar></Navbar>
             <section className="flex flex-col items-center w-[50%] mx-auto mt-28">
                 <h1 className="text-[#FF851B] font-medium pb-4">| NOS PRODUITS</h1>
                 <h1 className="text-4xl text-[#001F3F] font-bold pb-4">Votre Sécurité En Un Clic</h1>
@@ -19,7 +16,6 @@ export default function products(){
             <section>
                 <CardList></CardList>
             </section>
-            <Footer></Footer>
         </main>
     )
 }

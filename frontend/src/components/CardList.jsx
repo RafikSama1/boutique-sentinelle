@@ -18,7 +18,7 @@ export default function CardList() {
                         return (
                             <div className="flex flex-col items-center" key={product._id}>
                                 <div className="w-60 h-40 bg-gray-100">
-                                    <Link href={`/products/${product._id}`}><img className="w-60 h-32 object-contain" src={product.image} alt="HAC-HFW2509TU-A-LED.png"/></Link>
+                                    <Link href={`/products/${product._id}`}><img className="w-60 h-32 object-contain" src={`http://localhost:3000/${product.image}`} alt="HAC-HFW2509TU-A-LED.png"/></Link>
                                 </div>
                                 <div className="px-6 py-4 text-center">
                                     <h1 className="font-bold text-xl text-[#001F3F] pb-4">{product.name}</h1>
